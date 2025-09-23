@@ -1,0 +1,49 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #0d0d0d;
+    color: #00ff00; /* Un verde neón para un toque tecnológico */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+    text-align: center;
+}
+
+header {
+    margin-bottom: 2rem;
+}
+
+h1 {
+    font-size: 3rem;
+    text-shadow: 0 0 10px #00ff00;
+}
+
+.terminator-card {
+    background-color: #1a1a1a;
+    border: 2px solid #00ff00;
+    border-radius: 10px;
+    padding: 2rem;
+    max-width: 400px;
+    box-shadow: 0 0 20px rgba(0, 255, 0, 0.5);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.terminator-card:hover {
+    transform: scale(1.05); /* Un efecto de zoom al pasar el mouse */
+    box-shadow: 0 0 30px rgba(0, 255, 0, 0.8);
+}
+
+.terminator-img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-top: 1rem;
+}
+
+footer {
+    margin-top: 2rem;
+    font-size: 0.8rem;
+    color: #999;
+}

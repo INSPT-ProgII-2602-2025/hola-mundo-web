@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Terminator</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header>
+        <h1>Crear Terminator</h1>
+    </header>
+    <main>
+        <form action="terminators/crear" method="POST">
+            <input type="hidden" name="action" value="save">
+            <input type="hidden" name="id" value="">
+
+            <label for="model">Modelo:</label>
+            <input type="text" id="model" name="model" value="" required>
+            
+            <label for="description">Descripción:</label>
+            <textarea id="description" name="description" required>
+                
+            </textarea>
+            
+            <button type="submit">Crear Terminator</button>
+        </form>
+    </main>
+    <footer>
+        <p>&copy; 2025 Skynet - CRUD JSP</p>
+    </footer>
+</body>
+</html>

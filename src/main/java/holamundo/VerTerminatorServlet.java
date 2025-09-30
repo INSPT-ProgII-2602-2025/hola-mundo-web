@@ -8,7 +8,7 @@ import jakarta.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
 
-// Controlador verListaDeTerminators
+// Ruta para llegar a este controller: /terminators
 public class VerTerminatorServlet extends HttpServlet {
 
     @Override
@@ -18,7 +18,7 @@ public class VerTerminatorServlet extends HttpServlet {
         // Ligar un atributo a nivel request con la lista de Terminators
 
         // Redirigir al JSP que corresponde (usará el atributo anterior)
-        
+        req.getRequestDispatcher("/WEB-INF/terminator-list.jsp").forward(req, resp);
     }        
     
     

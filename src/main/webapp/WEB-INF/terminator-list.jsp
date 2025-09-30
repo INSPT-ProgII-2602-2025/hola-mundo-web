@@ -15,7 +15,7 @@
     </header>
     <main>
         <div class="terminators-list">
-            <a href="terminators?action=create" class="button">Crear Nuevo Terminator</a>
+            <a href="pages/terminator-form.html" class="button">Crear Nuevo Terminator</a>
             <table id="terminator-table">
                 <thead>
                     <tr>

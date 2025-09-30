@@ -8,13 +8,13 @@ import jakarta.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
 
-// /crearTerminator
+// Ruta para llegar a este controller: /terminators/crear
 public class CrearTerminatorServlet extends HttpServlet {
 
     // Devolver el form para crear temrinator
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        resp.sendRedirect("pages/terminator-form.html");
+        resp.sendRedirect("/pages/terminator-form.html");
     }
 
     // Crear un terminator

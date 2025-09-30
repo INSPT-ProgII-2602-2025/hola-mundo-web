@@ -9,12 +9,13 @@ public class TerminatorService {
     private static final TerminatorService instance = new TerminatorService();
 
     // 2. "Base de datos" en memoria y simple contador
-    private static final List<Terminator> terminators = new ArrayList<>();
+    private static List<Terminator> terminators;
     private static int nextId = 1;
 
     // 3. Constructor privado
     private TerminatorService() {
         // Datos de muestra iniciales
+        terminators = new ArrayList<>();
         terminators.add(new Terminator(nextId++, "T-800", "Endoesqueleto de combate infiltrador."));
         terminators.add(new Terminator(nextId++, "T-1000", "Hecho de polialeación mimética."));
     }
